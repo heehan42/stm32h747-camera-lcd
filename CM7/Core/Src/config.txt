@@ -1,0 +1,3 @@
+MPU disable(MPU_Config() 주석처리 <- Hardfault / SCB_EnableICache(), SCB_EnableDCache() 주석)
+
+SystemClock_Config() -> HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY); -> HAL_PWREx_ConfigSupply(PWR_DIRECT_SMPS_SUPPLY);
