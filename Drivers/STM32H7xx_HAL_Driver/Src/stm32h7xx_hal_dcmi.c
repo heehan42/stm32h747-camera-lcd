@@ -1182,6 +1182,7 @@ static void DCMI_DMAXferCplt(DMA_HandleTypeDef *hdma)
     /* Nothing to do */
   }
   TIM6->CNT=0;
+  // TODO: 메인 루프에서 처리
   if(MODE==NORMAL) draw_NORMAL();
   else if(MODE==SMALL) draw_SMALL();
   else if(MODE==SMALL_ROT) draw_SMALL_ROT();

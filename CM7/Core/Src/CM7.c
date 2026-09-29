@@ -90,6 +90,7 @@ void LCD_Init();
 #define DB_M0				AXI_SRAM_BUFFER
 #define DB_M1				AXI_SRAM_BUFFER+2*DB_LENGTH
 void drawfield();
+// TODO: 블록 단위 메모리 접근으로 캐시 최적화
 void draw_NORMAL();
 void draw_SMALL();
 void draw_SMALL_ROT();
